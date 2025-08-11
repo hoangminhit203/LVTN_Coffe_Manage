@@ -21,3 +21,41 @@ Các lớp này thường được viết tắt là UI, BLL (Lớp Logic Nghiệ
 
 Một nhược điểm của phương pháp phân lớp truyền thống này là các phụ thuộc thời gian biên dịch chạy từ trên xuống dưới. Nghĩa là, lớp UI phụ thuộc vào BLL, và BLL lại phụ thuộc vào DAL. Điều này có nghĩa là BLL, thường nắm giữ logic quan trọng nhất trong ứng dụng, lại phụ thuộc vào chi tiết triển khai truy cập dữ liệu (và thường phụ thuộc vào sự tồn tại của cơ sở dữ liệu). Việc kiểm thử logic nghiệp vụ trong kiến trúc như vậy thường khó khăn, đòi hỏi phải có cơ sở dữ liệu kiểm thử. Nguyên lý đảo ngược phụ thuộc có thể được sử dụng để giải quyết vấn đề này, như bạn sẽ thấy trong phần tiếp theo.
 <h3>Doc Để đọc thêm https://learn.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures</h3>
+<h1>Hướng Dẫn Cấu Trúc Hệ Thống </h1>
+<H2> Coffe_Manage.Domain </H2>
+<p>📌 Vai trò: Chứa các định nghĩa cốt lõi (Core business logic) và các kiểu dữ liệu dùng chung.
+Không phụ thuộc vào tầng nào khác.
+
+Configurations → Nơi định nghĩa các cấu hình chung cho Entity (ví dụ: Fluent API mapping cho EF Core).
+
+Constants → Chứa các hằng số (constant values) như thông báo lỗi, trạng thái, quyền,…
+
+CustomValidationAttribute → Chứa các Attribute để validate dữ liệu (ví dụ [EmailValid], [PhoneNumberValid]).
+
+Enums → Chứa các enum (trạng thái đơn hàng, vai trò user, loại sản phẩm…).
+
+IService → Định nghĩa các interface cho service layer (ví dụ IUserService, IOrderService).
+
+VModels → View Models hoặc DTOs để truyền dữ liệu giữa backend và frontend (khác Entity).</p>
+<h2>Coffe_Manage.Infrastructure.EF</h2>
+<p>📌 Vai trò: Kết nối với cơ sở dữ liệu bằng Entity Framework.
+
+Context → Chứa DbContext để quản lý kết nối DB và DbSet cho các bảng.
+
+Entities → Chứa các class mô tả bảng trong DB (ví dụ User, Product, Order).
+
+Migrations → Chứa file migration khi chạy Add-Migration và Update-Database.
+
+UnitOfWork.cs → Triển khai Unit of Work pattern để quản lý giao dịch (transaction) giữa nhiều repository.</p>
+<h2> Coffe_Manage.Repository </h2>
+<p>📌 Vai trò: Tầng làm việc trực tiếp với database thông qua EF Core (hoặc ORM khác).
+
+Thường có các repository class như UserRepository, ProductRepository để thao tác CRUD.
+
+Bạn đang có 2 folder NewFolder và NewFolder1 → Có thể là thư mục placeholder, chưa đặt tên.</p>
+<h2>Coffe_Manage.Service </h2>
+<p>📌 Vai trò: Chứa business logic của ứng dụng.
+
+Helpers → Các hàm hỗ trợ chung (ví dụ: convert data, format string, gửi email…).
+
+MiddleWare → Chứa middleware custom (ví dụ: logging, handle exception, authentication…).</p>
