@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\back-end\\BE_Coffe_Manage\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{279CEB27-4CB8-477D-ACBA-DD4EA5B49C6F}|BE_Coffe_Manage\\BE_Coffe_Manage.csproj|d:\\back-end\\be_coffe_manage\\be_coffe_manage\\coffe_manage.infrastructure.ef\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{279CEB27-4CB8-477D-ACBA-DD4EA5B49C6F}|BE_Coffe_Manage\\BE_Coffe_Manage.csproj|solutionrelative:be_coffe_manage\\coffe_manage.infrastructure.ef\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{279CEB27-4CB8-477D-ACBA-DD4EA5B49C6F}|BE_Coffe_Manage\\BE_Coffe_Manage.csproj|d:\\back-end\\be_coffe_manage\\be_coffe_manage\\be_coffe_manage.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{279CEB27-4CB8-477D-ACBA-DD4EA5B49C6F}|BE_Coffe_Manage\\BE_Coffe_Manage.csproj|solutionrelative:be_coffe_manage\\be_coffe_manage.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\back-end\\BE_Coffe_Manage\\BE_Coffe_Manage\\Coffe_Manage.Infrastructure.EF\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "BE_Coffe_Manage\\Coffe_Manage.Infrastructure.EF\\UnitOfWork.cs",
+              "ToolTip": "D:\\back-end\\BE_Coffe_Manage\\BE_Coffe_Manage\\Coffe_Manage.Infrastructure.EF\\UnitOfWork.cs",
+              "RelativeToolTip": "BE_Coffe_Manage\\Coffe_Manage.Infrastructure.EF\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-11T18:10:11.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BE_Coffe_Manage",
+              "DocumentMoniker": "D:\\back-end\\BE_Coffe_Manage\\BE_Coffe_Manage\\BE_Coffe_Manage.csproj",
+              "RelativeDocumentMoniker": "BE_Coffe_Manage\\BE_Coffe_Manage.csproj",
+              "ToolTip": "D:\\back-end\\BE_Coffe_Manage\\BE_Coffe_Manage\\BE_Coffe_Manage.csproj",
+              "RelativeToolTip": "BE_Coffe_Manage\\BE_Coffe_Manage.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-11T17:55:40.982Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

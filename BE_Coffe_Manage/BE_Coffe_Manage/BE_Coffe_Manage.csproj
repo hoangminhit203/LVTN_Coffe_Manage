@@ -1,0 +1,45 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Coffe_Manage.Application\Coffe_Manage.Application.csproj" />
+    <ProjectReference Include="..\Coffee_Manage.Infrastructure\Coffee_Manage.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Coffe_Manage.Domain\Constants\" />
+    <Folder Include="Coffe_Manage.Domain\CustomValidationAttribute\" />
+    <Folder Include="Coffe_Manage.Domain\Configurations\" />
+    <Folder Include="Coffe_Manage.Domain\Enums\" />
+    <Folder Include="Coffe_Manage.Domain\VModels\" />
+    <Folder Include="Coffe_Manage.Infrastructure.EF\Entities\" />
+    <Folder Include="Coffe_Manage.Infrastructure.EF\Migrations\" />
+    <Folder Include="Coffe_Manage.Infrastructure.EF\Context\" />
+    <Folder Include="Coffe_Manage.Repository\NewFolder1\" />
+    <Folder Include="Coffe_Manage.Repository\NewFolder\" />
+    <Folder Include="Coffe_Manage.Domain\IService\" />
+    <Folder Include="Coffe_Manage.Service\Helpers\" />
+    <Folder Include="Coffe_Manage.Service\MiddleWare\" />
+    <Folder Include="Mapping\" />
+  </ItemGroup>
+
+</Project>
